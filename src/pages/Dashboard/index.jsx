@@ -1,4 +1,5 @@
-import RecentTransactions from "./components/RecentTransactions/RecentTransactions";
+
+import RecentTransactions from "../../components/RecentTransactions/RecentTransactions";
 import StatsCards from "./components/StatsCards";
 import statsData from "./statsData";
 
