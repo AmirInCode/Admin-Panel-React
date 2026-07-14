@@ -1,4 +1,4 @@
-import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis } from "recharts";
+import { Bar, BarChart, ResponsiveContainer, XAxis } from "recharts";
 
 const datasale = [
     { day: "ش", sales: 120 },
@@ -21,7 +21,7 @@ const ChartSales = () => {
                     <XAxis reversed dataKey="day" />
 
 
-                    <Tooltip />
+                    
 
                     <defs>
                         <linearGradient id="barGradient" x1="0" y1="0" x2="0" y2="1">

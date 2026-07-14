@@ -9,7 +9,7 @@ const pageTitles = {
     "/settings": "تنظیمات",
 };
 
-const Header = () => {
+const Header = ({setSidebarOpen}) => {
 
     const { pathname } = useLocation();
 
@@ -19,8 +19,9 @@ const Header = () => {
         <header className="flex h-20 items-center justify-between rounded-3xl border border-gray-200 bg-white px-6 shadow-sm">
             {/* Right  */}
             <div className="flex items-center gap-4">
-                <button className="rounded-xl p-2 hover:bg-gray-100 lg:hidden">
-                    <Menu size={22} />
+                <button className="rounded-xl p-2 hover:bg-gray-100 lg:hidden"
+                onClick={() => setSidebarOpen(true)}>
+                    <Menu size={22} />  
                 </button>
                 <div>
                     <h1 className="text-xl font-bold text-gray-800">
